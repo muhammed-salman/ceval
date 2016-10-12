@@ -1,0 +1,346 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-size: 16px;
+    background: #f9f9f9;
+}
+#login-box{
+    transform: translateY(04rem);
+}
+.login-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.shadow-glow{
+    -moz-box-shadow: 0px 2px 4px rgba(0, 0,255, 0.5);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0,255, 0.5);
+    box-shadow: 0px 2px 4px rgba(0, 0, 255, 0.5);
+}
+.error{
+    color: red;
+}
+.auth-form,.sign-up-form{
+    margin: 0 auto;
+    border: 1px solid #a2a2a2;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    max-width: 340px;
+}
+.sign-up-form{
+    max-width: 500px;
+}
+.marg-l-1{
+    margin-left:1rem;
+}
+.marg-t-sm{
+    margin-top:0.25rem;
+}
+.marg-t-1{
+    margin-top:1rem;
+}
+.marg-t-2{
+    margin-top: 2rem;
+}
+.marg-t-6{
+    margin-top: 6rem;
+}
+.marg-t-7{
+    margin-top: 7rem;
+}
+.marg-bt-1{
+    margin-bottom: 1rem;
+}
+.marg-bt-2{
+    margin-bottom: 2rem;
+}
+.auth-form .link-label{
+    display: block;
+    float: right;
+    
+}
+.ceval{
+    background-image: url("../img/ceval-logo.svg");
+    background-size: 76px 48px;
+    background-repeat: no-repeat;
+    width: 76px;
+    height: 48px;
+    margin: 0 auto;
+}
+
+.btn-primary{
+    background: #b4ddb4; /* Old browsers */
+    background: -moz-linear-gradient(top, #e40000 0%, #e40010 17%, #e40046 33%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e40000 0%, #e40010 17%, #e40046 33%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e40000 0%, #e40010 17%, #e40046 33%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e40000', endColorstr='#e40046',GradientType=0 ); /* IE6-9 */
+    border: 1px solid #5f5f5f;
+    padding: 0.2rem;
+}
+.btn-primary:hover{
+    background: #52b152;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background: #373737;
+}
+.horizontal-nav{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    float:  left;
+    margin: 0;
+    color: white;
+    min-width: 6rem;
+    min-height: 6rem;
+    padding: 0.5rem;
+    align-items: stretch;
+}
+.horizontal-nav>div{
+    flex-grow: 1;
+    padding:0.2rem;
+    min-width: 2.5rem;
+    margin-top: 0.5rem;
+}
+.red-bg{
+    padding-bottom: 2rem;
+    animation: appear 0.25s ease-in;
+    -webkit-animation   : appear 0.25s ease-in;
+    -moz-animation: appear 0.25s ease-in;
+    background: #E40046;
+}
+.horizontal-nav>div span{
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #ffffff;
+    margin-top: 0.6rem;
+    max-width: 2rem;
+    overflow: hidden;
+}
+
+.horizontal-nav ul{
+    flex-grow: 1;
+    background: #E40046;
+    display: block;
+    margin-left: -0.5rem;
+    padding: 0;
+    position: absolute;
+    list-style: none;
+    display: none;
+    width: 20rem;
+}
+.horizontal-nav ul li:first-child{
+    margin-top: 1rem;
+}
+.horizontal-nav ul li a{
+    text-decoration: none;
+    display: block;
+    padding-left: 1.5rem;
+    color: #f0f0f0;
+}
+.horizontal-nav ul li a:hover{
+    color: #ccff00;
+}
+.horizontal-nav ul li{
+    display: block;
+    padding: 0.5rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.footer-nav{
+  float:left;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+footer .footer-nav ul{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  float: left;  
+  position: relative;
+  left: 50%;
+  list-style: none;
+  text-align: center;
+}
+footer .footer-nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #f0f0f0;
+}
+footer .footer-nav ul li{
+    display: block;
+    position: relative;
+    float: left;
+    border-right: 1px solid black;
+    margin-left: 0.5rem;
+    padding-right: 1rem;
+    right: 50%;
+}
+footer .footer-nav ul li:last-child{
+    border-right: 0;
+}
+.head-logo{
+    width: 225px;
+    height: 54px;
+    margin: 0.5rem; 
+}
+.college-head{
+    width: 54px;
+    height: 54px;
+    margin: 0.5rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+    background: #373737;
+    z-index: 1;
+}
+#applogo-name{
+    position: relative;
+    float: left;
+    width:29%;
+}
+#college-logo{
+    position: relative;
+    float:left;
+    width:63%;
+    text-align: right;
+    font-size: 2rem;
+}
+    
+.text-wrap{
+    word-wrap: break-word;
+}
+
+.dash-box{
+    border: 1px solid #272727;
+    margin-bottom: 3rem;
+    border-radius: 0.5rem;
+    min-height: 100px;
+}
+
+.flat-div{
+    border: 1px solid #171717;
+    padding: 1rem;
+}
+.ques-div{
+    border: 1px solid #171717;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+    max-height: 81px;
+    overflow-y: auto;
+}
+.ques-nav .nav-btn{
+    padding: 0.2rem 1.5rem 0.6rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f5f5f5;
+    background-color: #5f5f5f;
+}
+
+.ques-nav .nav-btn:hover{
+    text-decoration: none;
+    background-color: #E40046;
+    color: #ffffff;
+}
+
+.ques-div div{
+    position: relative;
+    float:left;
+    border: 1px solid #575757;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.1rem 0.5rem;
+}
+.dash-container{
+    padding-top: 2.5rem; 
+}
+.show{
+    margin-top: 2rem;
+    animation: appear 0.25s ease-in;
+    -webkit-animation: appear 0.25s ease-in;
+    -moz-animation: appear 0.25s ease-in;
+    display: block;
+}
+
+@keyframes appear{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+@-webkit-keyframes appear{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+@-moz-keyframes appear{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ .horizontal-nav ul{
+     margin-top: 5.5rem;
+  }   
+}
+
+@media 
+screen and (min-width: 320px) and (max-width: 800px),
+screen and (min-device-width: 320px) and (max-device-width: 800px){
+ 
+    #login-box{
+        transform: translateY(3rem);
+    }   
+    
+    .ceval{
+        background-size: 48px 30px;
+        width: 48px;
+        height: 30px;
+    }
+    
+    #login-box form h2{
+        font-size: 2rem;
+        margin-top: 0.5rem;
+    }
+    
+    .login-img{
+        width: 50px;
+        height:50px;
+    }
+    
+    #college-logo{
+        display: none;
+    }
+    .horizontal-nav{
+        margin-left: -1.5rem ;
+    }
+    .horizontal-nav ul{
+        position: relative;
+        width:100vw;
+    }
+    .horizontal-nav ul li{
+        width: 100%;
+    }
+    .cc-license{
+        display: none;
+    }
+    .footer-nav{
+        display: none;
+    }
+    .ques-div{
+        display: none;
+    }
+    
+}
